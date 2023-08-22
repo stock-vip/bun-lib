@@ -1,0 +1,16 @@
+{
+  "name": "demo-01",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "bun-plugin-dts": "^0.1.0"
+  },
+  "scripts": {
+    "build": "bun run build.mjs",
+    "prepublishOnly": "bun run build"
+  },
+  "peerDependencies": {
+    "typescript": ""
+  }
+}
