@@ -1,4 +1,8 @@
-# bun create stock-vip/bun-lib
+# 创建 bun lib
+```bash
+bun create stock-vip/bun-lib
+
+``` 
 
 To install dependencies:
 

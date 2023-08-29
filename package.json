@@ -2,12 +2,19 @@
   "name": "demo-01",
   "module": "index.ts",
   "type": "module",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
   "devDependencies": {
-    "bun-types": "latest",
-    "bun-plugin-dts": "^0.1.0"
+    "bumpp": "^9.2.0",
+    "bun-plugin-dts": "^0.1.0",
+    "bun-types": "latest"
   },
   "scripts": {
-    "build": "bun run build.mjs",
+    "build": "bun run script/build.mjs",
+    "git":"bumpp --commit --push --tag",
+    "release":"npm run git && npm run build && npm publish",
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
