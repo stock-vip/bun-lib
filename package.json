@@ -14,7 +14,7 @@
   "scripts": {
     "build": "bun run script/build.mjs",
     "git":"bumpp --commit --push --tag",
-    "release":"npm run git && npm run build && npm publish",
+    "release":"npm run git && npm publish",
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
